@@ -11,6 +11,16 @@
             display: flex;
             flex-direction: column;
             width: 50%;
+            border: 2px solid tomato;
+        }
+
+        .login-form>input {
+            margin: 1em;
+            padding: 10px;
+        }
+
+        .login-form>input[type="submit"] {
+            background-color: tomato;
         }
     </style>
 </head>
@@ -19,8 +29,8 @@
     <h1>Please Login</h1>
 
     <form class="login-form" action="">
-        <input type="email" name="email" id="" placeholder="Enter  Email" required>
-        <input type="password" name="password" id="" placeholder="Enter Password">
+        <input type="email" name="email" placeholder="Enter  Email" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
         <input type="submit" value="Login">
     </form>
 </body>
