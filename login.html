@@ -21,18 +21,37 @@
 
         .login-form>input[type="submit"] {
             background-color: tomato;
+            border: 0;
+            border-radius: 10px;
+            color: aliceblue;
+            font-size: larger;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
         }
     </style>
 </head>
 
 <body>
-    <h1>Please Login</h1>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Contact</a>
+            <a href="">Profile</a>
+        </nav>
+    </header>
+    <section class="container">
 
-    <form class="login-form" action="">
-        <input type="email" name="email" placeholder="Enter  Email" required>
-        <input type="password" name="password" placeholder="Enter Password" required>
-        <input type="submit" value="Login">
-    </form>
+        <form class="login-form" action="">
+            <input type="email" name="email" placeholder="Enter  Email" required>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </section>
 </body>
 
 </html>
